@@ -12,19 +12,24 @@ void main()
         A[i]=rand();
     }
     start=clock();
-    for(i-0;i<n;i++)
+    for(i=0;i<n;i++)
     {
-        int min=A[i];
         for(j=i+1;j<n;j++)
         {
-            if(min<A[j])
+            if(A[i]>A[j])
             {
-                A[i]=A[j];
-                A[j]=min;
+                int temp=A[j];
+                A[j]=A[i];
+                A[i]=temp;
             }
         }
     }
     end=clock();
+    /*printf("The sorted array is\n");
+    for(i=0;i<n;i++)
+    {
+        printf("%d\t",A[i]);
+    }*/
     time=(double)(end-start)/CLOCKS_PER_SEC;
     printf("Time taken for %d inputs is %f\n",n,time);
 }
