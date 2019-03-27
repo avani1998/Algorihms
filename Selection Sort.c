@@ -12,16 +12,18 @@ void main()
         A[i]=rand();
     }
     start=clock();
-    for(i=0;i<n;i++)
+    for(i=0;i<n-1;i++)
     {
+        int min=i;
         for(j=i+1;j<n;j++)
         {
-            if(A[i]>A[j])
+            if(A[min]>A[j])
             {
-                int temp=A[j];
-                A[j]=A[i];
-                A[i]=temp;
+                min=j;
             }
+            temp=A[i];
+            A[i]=A[min];
+            A[min]=temp;
         }
     }
     end=clock();
