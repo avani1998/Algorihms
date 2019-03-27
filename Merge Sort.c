@@ -31,25 +31,24 @@ void mergesort(int a[],int low,int high)
  
 void merge(int a[],int low,int mid,int high)
 {
-	int temp[50];	//array used for merging
-	int i=low,j=mid,k; //beginning of the first list> ;	//beginning of the second list
+	int b[50];
+	int i=low,j=mid,k;
 	k=0;
 	
 	while(i<=mid && j<=high)	//while elements in both lists
 	{
 		if(a[i]<a[j])
-			temp[k++]=a[i++];
+			b[k++]=a[i++];
 		else
-			temp[k++]=a[j++];
+			b[k++]=a[j++];
 	}
 	
-	while(i<=mid)	//copy remaining elements of the first list
-		temp[k++]=a[i++];
+	while(i<=mid)	//copy remaining elements of the first array
+		b[k++]=a[i++];
 		
-	while(j<=high)	//copy remaining elements of the second list
-		temp[k++]=a[j++];
+	while(j<=high)	//copy remaining elements of the second array
+		b[k++]=a[j++];
 		
-	//Transfer elements from temp[] back to a[]
 	for(i=low,j=0;i<=high;i++,j++)
-		a[i]=temp[j];
+		a[i]=b[j];
 }
