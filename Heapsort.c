@@ -58,3 +58,13 @@ void main()
     tottime=(double)(end-start)/CLOCKS_PER_SEC;
     printf("Time taken is %f\n",tottime);
 }
+/*Enter the heap size                                                                                                                              
+5                                                                                                                                                
+Enter the heap                                                                                                                                   
+9                                                                                                                                                
+0                                                                                                                                                
+5                                                                                                                                                
+3                                                                                                                                                
+2                                                                                                                                                
+Elements sorted                                                                                                                                  
+0       2       3       5       9       Time taken is 0.000003*/
