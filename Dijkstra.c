@@ -51,3 +51,18 @@ void main()
         if(i!=source)
             printf("The distance from %d to %d is %d\n",source,i,d[i]);
 }
+/*Enter the number of vertices                                                                                                                     
+5                                                                                                                                                
+Enter the cost adjacency matrix                                                                                                                  
+999 3 999 7 999                                                                                                                                  
+3 999 4 2 999                                                                                                                                    
+0999 4 999 5 6                                                                                                                                   
+7 2 5 999 4                                                                                                                                      
+999 999 6 4 999                                                                                                                                  
+Enter the source node                                                                                                                            
+1                                                                                                                                                
+The distance from 1 to 2 is 3                                                                                                                    
+The distance from 1 to 3 is 7                                                                                                                    
+The distance from 1 to 4 is 5                                                                                                                    
+The distance from 1 to 5 is 9    
+*/
