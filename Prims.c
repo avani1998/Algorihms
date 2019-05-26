@@ -51,3 +51,22 @@ void main()
     }
     printf("Min cost is %d",mincost);
 }
+/*
+Enter the number of vertices                                                                                                                   
+5                                                                                                                                              
+Enter the cost matrix                                                                                                                          
+0 5 7 999 2                                                                                                                                    
+5 0 999 6 3                                                                                                                                    
+7 999 0 4 4                                                                                                                                    
+999 6 4 0 5                                                                                                                                    
+2 3 4 5 0                                                                                                                                      
+Enter the source vertex                                                                                                                        
+1                
+edge 1 (1 to 5 = 2                                                                                                                            
+                                                                                                                                               
+ edge 2 (5 to 2 = 3                                                                                                                            
+                                                                                                                                               
+ edge 3 (5 to 3 = 4                                                                                                                            
+                                                                                                                                               
+ edge 4 (3 to 4 = 4                                                                                                                            
+Min cost = 13 */
