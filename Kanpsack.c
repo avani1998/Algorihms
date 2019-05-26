@@ -35,6 +35,23 @@ void main()
         }
     }
     printf("The maximum value is %d\n",m[n][cap]);
+    j=cap;
+    for(i=1;i<=n;i++);
+    x[i]=0;
+    for(i=n;i>0;i--)
+    {
+        if(m[i][j]!=m[i-1][j])
+        {
+            x[i]=1;
+            j=j-w[i];
+        }
+    }
+    printf("The item set is\n");
+    for(i=1;i<=n;i++)
+    {
+        if(x[i]==1)
+        printf("%d\t",i);
+    }
     for(i=1;i<=n;i++)
     {
        for(j=1;j<=cap;j++)
